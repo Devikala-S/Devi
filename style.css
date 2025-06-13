@@ -37,7 +37,7 @@
         position:static;
     }
     .position{
-        border: 1px solid violet;
+        border: 2px solid violet;
     }
     .relative{
         position:relative;
@@ -63,15 +63,97 @@
     .flex-container{
         display: flex;
         /* flex-direction: row-reverse; */
-        justify-content: flex-start;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: greenyellow;
+        height: 50vh;
     }
     .flex-container div{
         background-color: darksalmon;
-        border: 2px solid green;
+        border: 2px solid black;
         height: 100px;
         width: 100px;
     }
     .item2{
-        /* flex-grow: 2; */
+        flex-grow: 2;
         flex-shrink: 0;
     }
+    .navbar{
+        display: flex;
+        justify-content:space-between;
+        padding-left: 20px;
+        padding-right: 20px;
+        color: black;
+        background-color: aqua;
+        border-radius: 50px;
+        border: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .container{
+        display: flex;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .grid-container{
+        display: grid;
+        grid-template-rows: 100px 100px 100px 100px;
+        grid-template-columns: 100px 100px 100px;
+        gap: 20px;
+    }
+    .grid-container div{
+        background-color: gold;
+        border: 2px solid black;
+    }
+    .item1{
+        grid-row-start: 1;
+        grid-row-end: 4;
+    }
+    .item2{
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+    .grid-container1{
+        display: grid;
+        grid-template-rows: 100px 100px 100px;
+        grid-template-columns: 100px 100px 100px 100px;
+
+    }
+    .grid-container1 div{
+        border: 2px solid black;
+    }
+    .new1{
+        background-color: orange;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        align-content: center;
+    }
+    .new2{
+        background-color: lightskyblue;
+        grid-column-start: 1;
+        grid-column-end: 3;
+         align-content: center;
+    }
+    .new5{
+        grid-column-start: 1;
+        grid-column-end: 5;
+        background-color:lightgreen;
+         align-content: center;
+    }
+    .new4{
+        background-color: red;
+         align-content: center;
+    }
+    .new3{
+         align-content: center;
+    }
+    @media (max-width:720px){
+    .navbar{
+        display: flex;
+        flex-direction: column;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+}
