@@ -63,6 +63,7 @@
     .flex-container{
         display: flex;
         /* flex-direction: row-reverse; */
+        justify-content: flex-start;
     }
     .flex-container div{
         background-color: darksalmon;
